@@ -730,3 +730,30 @@ footer{
 .change div:first-of-type{
     margin-right: 1rem;
 }
+
+.help{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    border-radius: 10rem;
+    border: none;
+    transform: translate(-2rem, -1rem);
+    justify-content: center;
+    padding: .3rem;
+    width: 13rem;
+    filter: drop-shadow(0rem 1.2rem 1.3rem rgb(161, 161, 161));
+    position: fixed;
+    right: 0;
+}
+
+.help img{
+    width: 25%;
+}
+
+.help p{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: 600;
+    font-size: 2ch;
+    margin-left: .5rem;    
+}
