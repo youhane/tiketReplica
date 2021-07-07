@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+nav{
+    display: flex;
+    margin: 3rem 7rem;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.logo{
+    width: 15%;
+    height: 15%;
+    cursor: pointer;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    margin: .5rem 0rem 0rem 2rem;
+    cursor: pointer;
+}
+
+nav ul:first-of-type li a:hover{
+    border-bottom: 1px solid blue;
+}
+
+.right{
+    margin-left: 4.6rem;
+    font-weight: 500;
+}
+
+.right button{
+    color: blue;
+    background-color: white;
+    box-shadow: 0rem 0rem 0.2rem #888888;
+    padding: 0.41rem 0.9em;
+    border: 1px;
+    border-radius: 37%;
+    font-weight: 600;
+    margin: 0rem;
+    margin-top: -10rem;
+}
+
+.banner{
+    background-color: rgb(63, 98, 252);
+    padding-bottom: 9rem;
+    cursor: pointer;
+}
+
+.carousel img{
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carouselWrapper .fa-chevron-left{
+    position: absolute;
+    top: 21.5rem;
+    left: 15rem;
+    z-index: 10;
+    color: white;
+}
+
+.carouselWrapper .fa-chevron-right{
+    position: absolute;
+    top: 21.5rem;
+    right: 15rem;
+    color: white;
+}
+
+.orderTicket{
+    background-color: white;
+    margin: 0rem 10rem;
+    position: absolute;
+    top: 33rem;
+    width: 75rem;
+    border-radius: 10px;
+    box-shadow: -10px 10px 47px -18px rgba(0,0,0,0.75);
+}
+
+.orderTicket .top{
+    border-radius: 10px;
+    padding: 2rem;
+    padding-bottom: 1rem;
+    background-color: #F6F9FF;
+    display: flex;
+}
+
+.orderTicket .left{
+    width: 40rem;
+    margin-left: 2rem;
+}
+
+.orderTicket .left h5{
+    font-weight: 300;
+    font-size: 2.3ch;
+}
+
+.orderTicket .left h1{
+    font-weight: 600;
+    margin-top: .5rem;
+    font-size: 4ch;
+}
+
+.orderTicket .right{
+    display: flex;
+    cursor: pointer;
+}
+
+.orderBtn{
+    font-size: 1.5ch;
+    text-align: center;
+    border: 1px solid #C7D6F5;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+    border-radius: 10%;
+    padding: .5rem;
+}
+
+.orderBtn img{
+    width: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.orderBtn .fa-check{
+    color: white;
+    background-color: rgb(119, 119, 252);
+    width: min-content;
+    border-radius: 50%;
+    padding: .3rem;
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+}
+
+.orderBtn:first-of-type{
+    border: 3px solid rgb(119, 119, 252);
+}
+
+.orderBtn:hover{
+    border: 3px solid rgb(119, 119, 252);
+}
+
+.plane{
+    background-color: rgb(119, 119, 252);
+    width: min-content;
+    border-radius: 50%;
+    padding: .5rem;
+}
+
+.nomor2 .fa-plane{
+    color: white;  
+    transform: rotate(-45deg);
+}
+
+.atas{
+    display: flex;
+    margin: 2rem;
+    padding-top: .5rem;
+    justify-content: space-between;
+}
+
+.atas .left{
+    display: flex;
+}
+
+.atas .left p {
+    padding-left: 1rem;
+    padding-top: .5rem;
+    font-weight: 600;
+    font-size: 2ch;
+}
+
+.atas .right a{
+    color: rgb(119, 119, 252);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.5ch;
+}
+
+.bawah{
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 20rem;
+}
+
+.bawah label{
+    font-size: 1.7ch;
+}
+
+.bawah input{
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+label, select, button{
+    cursor: pointer;
+}
+
+.nomor3{
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.nomor3 div{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.nomor3 input{
+    border: none;
+    margin-top: .4rem;
+}
+
+.dari{
+    padding-right: 3.5rem;
+}
+
+select{
+    margin-top: .5rem;
+    border: none;
+}
+
+.switch{
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+}
+
+.switch hr{
+    transform: rotate(90deg);
+    width: 2rem;
+}
+
+.fa-exchange-alt{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    padding: .5rem;
+    background-color: white;
+    z-index: 10;
+}
+
+.ke, .berangkat, .pulang{
+    padding-left: 1rem;
+    border-right: 1px solid black;
+}
+
+.ke{
+    padding-right: 5rem;
+}
+
+.berangkat{
+    padding-right: 4rem;
+}
+
+.pulang{
+    padding-right: 3.8rem;
+}
+
+.pulang label{
+    padding-left: .3rem;
+    font-size: 1.5ch;
+}
+
+.kelas{
+    padding-left: 1rem;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.submit button{
+    background-color: gold;
+    color: rgb(0, 102, 255);
+    text-transform: uppercase;
+    padding: 1rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.9ch;
+}
+
+.bottom .left p{
+    padding-left: 1.2rem;
+}
+
+.simple{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 27rem;;
+}
+
+.simple hr{
+    width: 70rem;
+}
+
+.simple img{
+    width: 20%;
+}
+
+.simple>div, .simple>div>div{
+    display: flex;
+}
+
+.simple>div>div{
+    width: 33rem;
+}
+
+.profile, .book{
+    margin-right: 1rem;
+}
+
+.simple>div>div h1{
+    font-size: 2.3ch;
+    font-weight: 600;
+}
+
+.simple>div>div p{
+    font-size: 1.7ch;
+}
+
+.botPart{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.simpleText{
+    margin-top: 1rem;
+}
+
+.fitur{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.fitur h1{
+    font-size: 4ch;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.fitur p{
+    font-size: 1.9ch;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+}
+
+.wrapper img{
+    width: 90%;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.wrapper img:hover{
+    transform: translateY(-1rem);
+    filter: drop-shadow(0 1.5rem .75rem rgb(170, 170, 170));
+}
+
+.fitur button{
+    border: 1px solid orange;
+    background-color: transparent;
+    padding: .5rem;
+    font-size: 2ch;
+    color: orange;
+    border-radius: 5px;
+    width: 13rem;
+    transition: .2s;
+    margin-bottom: 2rem;
+}
+
+.fitur button:hover{
+    background-color: orange;
+    color: white;
+}
+
+.fitur hr{
+    width: 70rem;
+    margin: auto;
+}
+
+.kemudahan{
+    text-align: center;
+    margin: 2rem;
+    background-image: url("../assets/bg/kemudahan.png");
+    height: fit-content;
+    background-repeat: no-repeat;
+}
+
+.kemudahan h1{
+    font-size: 3.5ch;
+    font-weight: 600;
+    padding-top: 5rem;
+}
+
+.isinya{
+    display: inline-grid;
+    row-gap: 3rem;
+    grid-template-columns: auto auto auto;
+    border: 1.5rem solid beige;
+    background-color: azure;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin: 3rem 10rem 7rem 10rem;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.item img{
+    width: 40%;
+}
+
+.item h4{
+    font-weight: 600;
+    font-size: 1.8ch;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.item p{
+    font-weight: 300;
+    font-size: 1.7ch;
+}
+
+.maskot{
+    display: flex;
+    transform: translate(8rem, -9.5rem);
+}
+
+.feet{
+    font-size: 3.5ch;
+    font-weight: 600;
+    transform: translateY(-6rem);
+}
+
+.partner, .cicilan{
+    display: flex;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 2rem;
+}
+
+.cicilText{
+    margin-left: 4rem;
+}
+
+.cicilText h1, .partnerText h1{
+    font-size: 3.3ch;
+    font-weight: 600;
+}
+
+.cicilText p, .partnerText p{
+    margin-top: 2rem;
+    font-size: 1.8ch;
+    margin-bottom: 4rem;
+}
+
+.cicilText a, .partnerText a{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.partner{
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    text-align: right;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 2rem;
+}
+
+.links{
+    display: flex;
+}
+
+.one>div{
+    display: flex;
+}
+
+.one p{
+    font-size: 1.5ch;
+}
+
+.one h5{
+    font-size: 1.75ch;
+    font-weight: 300;
+}
+
+.one>div img{
+    width: 10%;
+    margin-right: 1rem;
+}
+
+.two p, .three p, .four p{
+    cursor: pointer;
+}
+
+.two p:hover, .three p:hover, .four p:hover{
+    color: blue;
+}
+
+.call img{
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.mail{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footLogo{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+
+
+.header{
+    font-size: 1.7ch;
+}
+
+.two, .three{
+    margin-right: 8rem;
+}
+
+.two p, .three p, .four p{
+    font-size: 1.6ch;
+    margin-top: .5rem;
+    width: max-content;
+}
+
+.two p:first-of-type, .three p:first-of-type, .four p:first-of-type{
+    margin-top: 3.5rem;
+}
+
+.five img:first-of-type{
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+}
+
+.five img{
+    cursor: pointer;
+}
+
+.partners{
+    display: flex;
+    margin-top: 5rem;
+}
+
+.wonderful{
+    display: flex;
+    font-size: 1.2ch;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 1rem;
+}
+
+.wonderful img{
+    width: 50%;
+    height: min-content;
+}
+
+.penghargaan{
+    margin-right: 4rem;
+}
+
+.transaction{
+    margin-right: 8rem;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+}
+
+.iconsSocial{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 1.5rem;
+    column-gap: 1rem;
+}
+
+.icons img{
+    width: 5rem;
+}
+
+.penghargaan .icons img{
+    width: 3rem;
+}
+
+.iconsSocial img{
+    width: 2rem;
+    border-radius: .5rem;
+    filter: grayscale();
+}
+
+.iconsSocial img:hover{
+    filter: grayscale(0%);
+}
+
+.heading{
+    margin-bottom: 1.5rem;
+}
+
+.final{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.final img{
+    width: 10%;
+}
+
+.line{
+    width: 75%;
+    position: relative;
+    left: 11.5rem;
+    color: rgba(233, 233, 233, 0.329);
+}
+
+.covid{
+    background-color: #35405A;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.covid span{
+    color: orange;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.lang{
+    display: flex;
+    font-size: 1.4ch;
+    justify-content: space-between;
+    background-color: rgb(238, 238, 238);
+    color: rgb(109, 109, 109);
+    padding-top: .5rem;
+    padding-left: 7rem;
+    padding-right: 10rem;
+}
+
+.lang ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lang ul li{
+    margin-right: 1.5rem;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.lang ul li:hover{
+    color: blue;
+}
+
+.change{
+    display: flex;
+}
+
+.flag i{
+    transform: translateY(-5px);
+    color: rgb(202, 202, 202);
+    cursor: pointer;
+}
+
+.change p i{
+    transform: translateY(1px);
+    color: rgb(202, 202, 202);
+    cursor: pointer;
+}
+
+.change div:first-of-type{
+    margin-right: 1rem;
+}
