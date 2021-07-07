@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tiket</title>
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <div class="covid">
+    <p>Cek info terbaru tentang <span>tiket CLEAN</span> dan <span>kebijakan pemesanan & perjalanan</span> selama
+      COVID-19</p>
+  </div>
+  <div class="lang">
+    <ul>
+      <li>Daftarkan Hotel Anda</li>
+      <li>Daftarkan Aktivitas/Event Anda</li>
+      <li>Promo</li>
+      <li>Pusat Bantuan</li>
+    </ul>
+    <div class="change">
+      <div class="flag">
+        <img src="../assets/icon/id-flag.png" alt="">
+        <i class="fa fa-chevron-down fa-lg"></i>
+      </div>
+      <p>IDR <i class="fa fa-chevron-down fa-lg"></i></p>
+    </div>
+  </div>
+  <nav>
+    <img src="../assets/logo/tiket.png" alt="logo" class="logo">
+    <ul>
+      <li><a>Tiket Pesawat</a></li>
+      <li><a>Hotel</a></li>
+      <li><a>To Do</a></li>
+      <li><a>Tiket Kereta Api</a></li>
+      <li><a>Sewa Mobil</a></li>
+      <li><a>Event</a></li>
+    </ul>
+    <ul class="right">
+      <li><a>Elite Rewards</a></li>
+      <li><a>Cek Order</a></li>
+      <li><a>Login</a></li>
+      <li><button>Daftar</button></li>
+    </ul>
+  </nav>
+  <!-- header -->
+  <header>
+    <section class="banner">
+      <div class="carouselWrapper">
+        <i class="fas fa-chevron-left fa-5x"></i>
+        <div class="carousel">
+          <div>
+            <img src="../assets/carousel/carousel1.png" alt="">
+          </div>
+          <div>
+            <img src="../assets/carousel/carousel2.png" alt="">
+          </div>
+          <div>
+            <img src="../assets/carousel/carousel3.png" alt="">
+          </div>
+        </div>
+        <i class="fas fa-chevron-right fa-5x"></i>
+      </div>
+    </section>
+    <div class="orderTicket">
+      <div class="top">
+        <div class="left">
+          <h5>Hey, kamu</h5>
+          <h1>Mau ke mana?</h1>
+        </div>
+        <div class="right">
+          <a class="orderBtn">
+            <i class="fa fa-check fa-xs"></i>
+            <img src="../assets/icon/pesawat.png" alt="">
+            <p>Pesawat</p>
+          </a>
+          <a class="orderBtn">
+            <img src="../assets/icon/hotel.png" alt="">
+            <p>Hotel</p>
+          </a>
+          <a class="orderBtn">
+            <img src="../assets/icon/todo.png" alt="">
+            <p>To Do</p>
+          </a>
+          <a class="orderBtn">
+            <img src="../assets/icon/train.png" alt="">
+            <p>Kereta Api</p>
+          </a>
+          <a class="orderBtn">
+            <img src="../assets/icon/car.png" alt="">
+            <p>Sewa Mobil</p>
+          </a>
+          <a class="orderBtn">
+            <img src="../assets/icon/event.png" alt="">
+            <p>Event</p>
+          </a>
+        </div>
+      </div>
+      <form action="">
+        <div class="nomor2">
+          <div class="atas">
+            <div class="left">
+              <div class="plane">
+                <i class="fa fa-plane fa-lg"></i>
+              </div>
+              <p>Cari harga tiket pesawat murah & promo di sini</p>
+            </div>
+            <div class="right">
+              <a href="">Pencarian Terakhir <i class="fa fa-chevron-right fa-sm"></i></a>
+            </div>
+          </div>
+          <div class="bawah">
+            <input type="radio" name="arah" id="sekali">
+            <label for="sekali">Sekali Jalan</label>
+            <input type="radio" name="arah" id="pp">
+            <label for="pp">Pulang-Pergi</label>
+          </div>
+        </div>
+        <div class="nomor3">
+          <div class="dari">
+            <label for="from">Dari</label>
+            <select name="from" id="from">
+              <option value="0">✈ Kota atau bandara</option>
+              <option value="1">Volvo</option>
+              <option value="2">Volvo</option>
+              <option value="3">Volvo</option>
+              <option value="4">Volvo</option>
+            </select>
+          </div>
+          <div class="switch">
+            <hr>
+            <i class="fas fa-exchange-alt fa-sm"></i>
+            <hr>
+          </div>
+          <div class="ke">
+            <label for="to">Ke</label>
+            <select name="to" id="to">
+              <option value="0">✈ Mau ke mana?</option>
+              <option value="1">Volvo</option>
+              <option value="2">Volvo</option>
+              <option value="3">Volvo</option>
+              <option value="4">Volvo</option>
+            </select>
+          </div>
+          <div class="berangkat">
+            <label for="depart">Berangkat</label>
+            <input type="date" name="depart" id="depart">
+          </div>
+          <div class="pulang">
+            <span>
+              <input type="checkbox" name="arrive" id="arrive">
+              <label for="arrive">Pulang</label>
+            </span>
+            <input type="date" name="arrive" id="arrive">
+          </div>
+          <div class="kelas">
+            <label for="class">Penumpang & Kelas Kabin</label>
+            <select name="class" id="class">
+              <option value="0">Penumpang Kelas dan Kabin</option>
+              <option value="1">Volvo</option>
+              <option value="2">Volvo</option>
+              <option value="3">Volvo</option>
+              <option value="4">Volvo</option>
+            </select>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <div class="flexi">
+              <input type="checkbox" name="flexi" id="flexi">
+              <label for="flexi">Tampilkan tiket FLEXI</label>
+            </div>
+            <p>Tiket fleksibel yang bebas di-reschedule. <a href="">Lihat detail.</a></p>
+          </div>
+          <div class="submit">
+            <button type="submit">Cari Penerbangan</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <section class="simple">
+      <div class="topPart">
+        <div class="profile">
+          <img src="../assets/icon/profile.png" alt="">
+          <div class="simpleText">
+            <h1>Simple Profile</h1>
+            <p>Pesan lebih cepat, isi data penumpang dengan sekali klik.</p>
+          </div>
+        </div>
+        <div class="schedule">
+          <img src="../assets/icon/rescheduel.png" alt="">
+          <div class="simpleText">
+            <h1>Simple Reschedule</h1>
+            <p>Memudahkan kamu mengatur ulang penerbangan.</p>
+          </div>
+        </div>
+      </div>
+      <div class="botPart">
+        <div class="book">
+          <img src="../assets/icon/booking.png" alt="">
+          <div class="text">
+            <h1>Simple Booking Process</h1>
+            <p>Pemesanan tanpa ribet di mana pun dan kapan pun.</p>
+          </div>
+        </div>
+        <div class="refund">
+          <img src="../assets/icon/refund.png" alt="">
+          <div class="text">
+            <h1>Simple Refund</h1>
+            <p>Refund tiket tanpa ribet dari aplikasi maupun website</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="line">
+    <section class="fitur">
+      <h1>Fitur Baru untuk Liburan Lebih Aman!</h1>
+      <p>Dari tiket CLEAN untuk memastikan kebersihan, sampai tiket FLEXI yang bisa dipakai sampai 1 tahun kedepan.</p>
+      <div class="wrapper">
+        <div class="card">
+          <a href="">
+            <img src="../assets/card/card1.jpg" alt="">
+          </a>
+        </div>
+        <div class="card">
+          <a href="">
+            <img src="../assets/card/card2.jpg" alt="">
+          </a>
+        </div>
+        <div class="card">
+          <a href="">
+            <img src="../assets/card/card3.jpg" alt="">
+          </a>
+        </div>
+        <div class="card">
+          <a href="">
+            <img src="../assets/card/card4.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <button>Info selengkapnya</button>
+    </section>
+    <!-- <hr> -->
+    <section class="kemudahan">
+      <h1>Kemudahan itu ada tiketnya!</h1>
+      <div class="isinya">
+        <div class="item">
+          <img src="../assets/icon/booking.png" alt="">
+          <h4>Mudahnya Pesan Tiket dan Hotel</h4>
+          <p>Pesan tiket sekaligus hotel dengan mudah dan cepat. Tidak perlu risau, hanya dengan satu sentuhan jari,
+            tiket dan hotel yang kamu butuhkan bisa didapatkan dengan mudah.</p>
+        </div>
+        <div class="item">
+          <img src="../assets/icon/bookmark.png" alt="">
+          <h4>Banyak Pilihan Produk Terbaik</h4>
+          <p>Ada banyak pilihan maskapai dengan rute terlengkap ke seluruh dunia. Tersedia juga banyak pilihan hotel di
+            Asia. Kamu juga bisa cari tiket kereta ke berbagai rute, sewa mobil, dan pesan tiket hiburan.</p>
+        </div>
+        <div class="item">
+          <img src="../assets/icon/credit.png" alt="">
+          <h4>Banyak Pilihan Cara Pembayaran</h4>
+          <p>Saat transaksi di tiket.com, kamu bisa memilih cara pembayaran sesuai keinginan. Ada pilihan pembayaran via
+            bank transfer, ATM transfer, Virtual Account (VA), kartu debit online, maupun kartu kredit. Bisa dicili
+            juga, lho. Prosesnya mudah dan simpel!</p>
+        </div>
+        <div class="item">
+          <img src="../assets/icon/disc.png" alt="">
+          <h4>Banyak Promo Spesial</h4>
+          <p>Banyak promo untuk tiket & hotel kesayanganmu. Dapatkan diskon harga terbaik agar bujet liburan kamu
+            semakin hemat. Tidak ada alasan lagi untuk menunda liburan kamu.</p>
+        </div>
+        <div class="item">
+          <img src="../assets/icon/coin.png" alt="">
+          <h4>Benefit tiket Elite Rewards</h4>
+          <p>Dapatkan benefit tiket Elite Rewards berupa tiket Points yang bisa kamu tukarkan dengan diskon. Juga
+            berbagai benefit ekslusif sesuai produk yang kamu beli!</p>
+        </div>
+        <div class="item">
+          <img src="../assets/icon/cs.png" alt="">
+          <h4>24/7 Customer Care</h4>
+          <p>Melalui pelayanan 24/7 Customer Care, kami akan selalu ada buat kamu. Dapakan bantuan untuk pemesanan hotel
+            dan tiketmu dengan pelayanan 24/7 Customer Care dari tiket.com.</p>
+        </div>
+      </div>
+      <img src="../assets/icon/maskot.svg" class="maskot" alt="">
+      <p class="feet">mau ke mana? semua ada tiketnya!</p>
+    </section>
+    <section class="cicilan">
+      <img src="../assets/icon/cicilan.webp" alt="">
+      <div class="cicilText">
+        <h1>Cicilan Mudah dan Simpel</h1>
+        <p>Pesan tiket dan hotelmu sekarang, lalu cicil pembayarannya dengan sekali klik. Iya, semudah itu mencicil di
+          tiket.com! Program cicilan ini bisa kamu gunakan untuk membeli tiket pesawat, hotel, tiket hiburan, dan sewa
+          mobil. Mau bayar dalam waktu 3, 6, atau 12 bulan, semua tergantung pilihanmu! Program cicilan ini bisa
+          dinikmati oleh pemegang kartu bank yang telah berpartner dengan tiket.com.</p>
+        <a href="">Selengkapnya</a>
+      </div>
+    </section>
+    <div class="partner">
+      <div class="partnerText">
+        <h1>Partner tiket.com</h1>
+        <p>Kamu adalah prioritas kami! Karena itu, tiket.com bekerjasama dengan berbagai penyedia jasa transportasi,
+          jaringan hotel, sewa mobil, dan penyedia tiket hiburan untuk memastikan liburan kamu selalu nyaman dan
+          menyenangkan.</p>
+        <a href="">Selengkapnya</a>
+      </div>
+      <img src="../assets/icon/partner.svg" alt="">
+    </div>
+  </header>
+  <!-- footer -->
+  <footer>
+    <div class="links">
+      <div class="one">
+        <img src="../assets/logo/tiket.png" class="footLogo" alt="">
+        <div class="message">
+          <img src="../assets/icon/message.png" alt="">
+          <div class="info">
+            <h5>Whatsapp</h5>
+            <p>0858 1150 0888</p>
+          </div>
+        </div>
+        <div class="mail">
+          <img src="../assets/icon/email.png" alt="">
+          <div class="info">
+            <h5>Email</h5>
+            <p>cs@tiket.com</p>
+          </div>
+        </div>
+        <div class="call">
+          <img src="../assets/icon/call.png" alt="">
+          <div class="info">
+            <h5>Call center</h5>
+            <p>0804 1500 878 (Indonesia only)</p>
+            <p>+6221 3973 0888</p>
+          </div>
+        </div>
+      </div>
+      <div class="two">
+        <h5 class="header">
+          Perusahaan
+        </h5>
+        <p>Blog</p>
+        <p>Karir</p>
+        <p>Corporate</p>
+        <p>Partner</p>
+        <p>Elite Rewards</p>
+        <p>Perlindungan</p>
+        <p>Cicilan</p>
+      </div>
+      <div class="three">
+        <h5 class="header">
+          Produk
+        </h5>
+        <p>Tiket Pesawat</p>
+        <p>Hotel</p>
+        <p>To Do</p>
+        <p>Tiket Kereta Api</p>
+        <p>Sewa Mobil</p>
+        <p>Event</p>
+      </div>
+      <div class="four">
+        <h5 class="header">
+          Dukungan
+        </h5>
+        <p>Pusat Bantuan</p>
+        <p>Group Booking</p>
+        <p>Kebijakan Privasi</p>
+        <p>Syarat & Ketentuan</p>
+        <p>Daftarkan Hotel Anda</p>
+        <p>Daftarkan Aktivitas/Event Anda</p>
+        <p>tiket Anti Galau</p>
+        <p>tiket CLEAN</p>
+        <p>tiket FLEXI</p>
+      </div>
+      <div class="five">
+        <h5 class="header">
+          Download tiket.com app
+        </h5>
+        <img src="../assets/icon/play.png" alt="">
+        <img src="../assets/icon/apple.png" alt="">
+      </div>
+    </div>
+    <div class="partners">
+      <div class="wonderful">
+        <img src="../assets/icon/wonderfulIndonesia.png" alt="">
+        <div>
+          <p>Official Partner</p>
+          <p>Kementrian Pariwisata</p>
+          <p>Republik Indonesia</p>
+        </div>
+      </div>
+      <div class="transaction">
+        <p class="heading">Keamanan Transaksi Anda</p>
+        <div class="icons">
+          <img src="../assets/icon/verified-visa.png" alt="">
+          <img src="../assets/icon/master-card.png" alt="">
+          <img src="../assets/icon/geoTrust.png" alt="">
+          <img src="../assets/icon/jcb-secure.png" alt="">
+          <img src="../assets/icon/safekey.png" alt="">
+        </div>
+      </div>
+      <div class="penghargaan">
+        <p class="heading">Penghargaan</p>
+        <div class="icons">
+          <img src="../assets/icon/iata.png" alt="">
+          <img src="../assets/icon/topBrand.png" alt="">
+          <img src="../assets/icon/superbrand.png" alt="">
+        </div>
+      </div>
+      <div class="follow">
+        <p class="heading">Follow Us</p>
+        <div class="iconsSocial">
+          <img src="../assets/icon/fb.png" alt="">
+          <img src="../assets/icon/twitter.png" alt="">
+          <img src="../assets/icon/linkedin.png" alt="">
+          <img src="../assets/icon/youtube.png" alt="">
+          <img src="../assets/icon/instagram.svg" alt="">
+          <img src=" ../assets/icon/tiktok.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="final">
+      <img src="../assets/icon/blibli.png" alt="">
+      <p>© 2011-2021 PT. Global Tiket Network. All Rights Reserved</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="../script/carousel.js"></script>
+  <script src="../script/script.js"></script>
+</body>
+
+</html>
