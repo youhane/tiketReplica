@@ -5,10 +5,11 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tiket</title>
+  <title>tiket.com - Satu Aplikasi untuk Kebutuhan Liburanmu</title>
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="shortcut icon" href="../assets/icon/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -29,11 +30,22 @@
         <img src="../assets/icon/id-flag.png" alt="">
         <i class="fa fa-chevron-down fa-lg"></i>
       </div>
-      <p>IDR <i class="fa fa-chevron-down fa-lg"></i></p>
+      <p class="currency">IDR <i class="fa fa-chevron-down fa-lg"></i></p>
     </div>
   </div>
+  <div class="popUpLang">
+    <div class="ina">
+      <img src="../assets/icon/id-flag.png" alt="">
+      <p>Bahasa Indonesia</p>
+    </div>
+    <div class="eng">
+      <img src="../assets/icon/us-flag.png" alt="">
+      <p>English</p>
+    </div>
+  </div>
+  <p class="popUpCurrency">IDR - Rupiah Indonesia</p>
   <nav>
-    <img src="../assets/logo/tiket.png" alt="logo" class="logo">
+    <img src="../assets/logo/tiket.png">
     <ul>
       <li><a>Tiket Pesawat</a></li>
       <li><a>Hotel</a></li>
@@ -42,7 +54,7 @@
       <li><a>Sewa Mobil</a></li>
       <li><a>Event</a></li>
     </ul>
-    <ul class="right">
+    <ul>
       <li><a>Elite Rewards</a></li>
       <li><a>Cek Order</a></li>
       <li><a>Login</a></li>
@@ -51,8 +63,8 @@
   </nav>
   <!-- header -->
   <header>
-    <section class="banner">
-      <div class="carouselWrapper">
+    <section>
+      <div>
         <i class="fas fa-chevron-left fa-5x"></i>
         <div class="carousel">
           <div>
@@ -68,121 +80,123 @@
         <i class="fas fa-chevron-right fa-5x"></i>
       </div>
     </section>
-    <div class="orderTicket">
-      <div class="top">
-        <div class="left">
-          <h5>Hey, kamu</h5>
-          <h1>Mau ke mana?</h1>
-        </div>
-        <div class="right">
-          <a class="orderBtn">
-            <i class="fa fa-check fa-xs"></i>
-            <img src="../assets/icon/pesawat.png" alt="">
-            <p>Pesawat</p>
-          </a>
-          <a class="orderBtn">
-            <img src="../assets/icon/hotel.png" alt="">
-            <p>Hotel</p>
-          </a>
-          <a class="orderBtn">
-            <img src="../assets/icon/todo.png" alt="">
-            <p>To Do</p>
-          </a>
-          <a class="orderBtn">
-            <img src="../assets/icon/train.png" alt="">
-            <p>Kereta Api</p>
-          </a>
-          <a class="orderBtn">
-            <img src="../assets/icon/car.png" alt="">
-            <p>Sewa Mobil</p>
-          </a>
-          <a class="orderBtn">
-            <img src="../assets/icon/event.png" alt="">
-            <p>Event</p>
-          </a>
-        </div>
-      </div>
-      <form action="">
-        <div class="nomor2">
-          <div class="atas">
-            <div class="left">
-              <div class="plane">
-                <i class="fa fa-plane fa-lg"></i>
-              </div>
-              <p>Cari harga tiket pesawat murah & promo di sini</p>
-            </div>
-            <div class="right">
-              <a href="">Pencarian Terakhir <i class="fa fa-chevron-right fa-sm"></i></a>
-            </div>
-          </div>
-          <div class="bawah">
-            <input type="radio" name="arah" id="sekali">
-            <label for="sekali">Sekali Jalan</label>
-            <input type="radio" name="arah" id="pp">
-            <label for="pp">Pulang-Pergi</label>
-          </div>
-        </div>
-        <div class="nomor3">
-          <div class="dari">
-            <label for="from">Dari</label>
-            <select name="from" id="from">
-              <option value="0">✈ Kota atau bandara</option>
-              <option value="1">Volvo</option>
-              <option value="2">Volvo</option>
-              <option value="3">Volvo</option>
-              <option value="4">Volvo</option>
-            </select>
-          </div>
-          <div class="switch">
-            <hr>
-            <i class="fas fa-exchange-alt fa-sm"></i>
-            <hr>
-          </div>
-          <div class="ke">
-            <label for="to">Ke</label>
-            <select name="to" id="to">
-              <option value="0">✈ Mau ke mana?</option>
-              <option value="1">Volvo</option>
-              <option value="2">Volvo</option>
-              <option value="3">Volvo</option>
-              <option value="4">Volvo</option>
-            </select>
-          </div>
-          <div class="berangkat">
-            <label for="depart">Berangkat</label>
-            <input type="date" name="depart" id="depart">
-          </div>
-          <div class="pulang">
-            <span>
-              <input type="checkbox" name="arrive" id="arrive">
-              <label for="arrive">Pulang</label>
-            </span>
-            <input type="date" name="arrive" id="arrive">
-          </div>
-          <div class="kelas">
-            <label for="class">Penumpang & Kelas Kabin</label>
-            <select name="class" id="class">
-              <option value="0">Penumpang Kelas dan Kabin</option>
-              <option value="1">Volvo</option>
-              <option value="2">Volvo</option>
-              <option value="3">Volvo</option>
-              <option value="4">Volvo</option>
-            </select>
-          </div>
-        </div>
-        <div class="bottom">
+    <div class="orderWrapper">
+      <div class="orderTicket">
+        <div>
           <div class="left">
-            <div class="flexi">
-              <input type="checkbox" name="flexi" id="flexi">
-              <label for="flexi">Tampilkan tiket FLEXI</label>
-            </div>
-            <p>Tiket fleksibel yang bebas di-reschedule. <a href="">Lihat detail.</a></p>
+            <h5>Hey, kamu</h5>
+            <h1>Mau ke mana?</h1>
           </div>
-          <div class="submit">
-            <button type="submit">Cari Penerbangan</button>
+          <div class="right">
+            <a class="orderBtn">
+              <i class="fa fa-check fa-xs"></i>
+              <img src="../assets/icon/pesawat.png" alt="">
+              <p>Pesawat</p>
+            </a>
+            <a class="orderBtn">
+              <img src="../assets/icon/hotel.png" alt="">
+              <p>Hotel</p>
+            </a>
+            <a class="orderBtn">
+              <img src="../assets/icon/todo.png" alt="">
+              <p>To Do</p>
+            </a>
+            <a class="orderBtn">
+              <img src="../assets/icon/train.png" alt="">
+              <p>Kereta Api</p>
+            </a>
+            <a class="orderBtn">
+              <img src="../assets/icon/car.png" alt="">
+              <p>Sewa Mobil</p>
+            </a>
+            <a class="orderBtn">
+              <img src="../assets/icon/event.png" alt="">
+              <p>Event</p>
+            </a>
           </div>
         </div>
-      </form>
+        <form action="">
+          <div class="nomor2">
+            <div class="atas">
+              <div class="left">
+                <div class="plane">
+                  <i class="fa fa-plane fa-lg"></i>
+                </div>
+                <p>Cari harga tiket pesawat murah & promo di sini</p>
+              </div>
+              <div class="right">
+                <a href="">Pencarian Terakhir <i class="fa fa-chevron-right fa-sm"></i></a>
+              </div>
+            </div>
+            <div class="bawah">
+              <input type="radio" name="arah" id="sekali">
+              <label for="sekali">Sekali Jalan</label>
+              <input type="radio" name="arah" id="pp">
+              <label for="pp">Pulang-Pergi</label>
+            </div>
+          </div>
+          <div class="nomor3">
+            <div class="dari">
+              <label for="from">Dari</label>
+              <select name="from" id="from">
+                <option value="0">✈ Kota atau bandara</option>
+                <option value="1">Volvo</option>
+                <option value="2">Volvo</option>
+                <option value="3">Volvo</option>
+                <option value="4">Volvo</option>
+              </select>
+            </div>
+            <div class="switch">
+              <hr>
+              <i class="fas fa-exchange-alt fa-sm"></i>
+              <hr>
+            </div>
+            <div class="ke">
+              <label for="to">Ke</label>
+              <select name="to" id="to">
+                <option value="0">✈ Mau ke mana?</option>
+                <option value="1">Volvo</option>
+                <option value="2">Volvo</option>
+                <option value="3">Volvo</option>
+                <option value="4">Volvo</option>
+              </select>
+            </div>
+            <div class="berangkat">
+              <label for="depart">Berangkat</label>
+              <input type="date" name="depart" id="depart">
+            </div>
+            <div class="pulang">
+              <span>
+                <input type="checkbox" name="arrive" id="arrive">
+                <label for="arrive">Pulang</label>
+              </span>
+              <input type="date" name="arrive" id="arrive">
+            </div>
+            <div class="kelas">
+              <label for="class">Penumpang & Kelas Kabin</label>
+              <select name="class" id="class">
+                <option value="0">Penumpang Kelas dan Kabin</option>
+                <option value="1">Volvo</option>
+                <option value="2">Volvo</option>
+                <option value="3">Volvo</option>
+                <option value="4">Volvo</option>
+              </select>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="left">
+              <div class="flexi">
+                <input type="checkbox" name="flexi" id="flexi">
+                <label for="flexi">Tampilkan tiket FLEXI</label>
+              </div>
+              <p>Tiket fleksibel yang bebas di-reschedule. <a href="">Lihat detail.</a></p>
+            </div>
+            <div class="submit">
+              <button type="submit">Cari Penerbangan</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
     <button class="help"><img src="../assets/icon/help.png" alt="">
       <p>Pusat Bantuan</p>
